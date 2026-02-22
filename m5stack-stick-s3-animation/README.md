@@ -1,15 +1,13 @@
-# Bad Apple on M5Stack StickS3
+# Bad Apple on M5Stack Stick Plus2
 
-Bad Apple!! music video player for **M5Stack StickS3** (ESP32-S3) with interactive effects.
+Bad Apple!! music video player for **M5Stack StickS3** (ESP32) with interactive effects.
 
 180x135 1-bit video with audio playback, gyroscope-based rotation, random colors, and glitch effects.
 
 ## Hardware
 
-- M5Stack StickS3 (ESP32-S3, 8 MB flash, 8 MB PSRAM)
+- M5Stack StickPlus2 (ESP32, 8 MB flash, 8 MB PSRAM)
 - ST7789 135x240 LCD
-- ES8311 speaker (I2S)
-- MPU6886 / BMI270 IMU
 
 ## Features
 
@@ -80,11 +78,6 @@ Frame data:
     uint16  run_lengths[]      -- alternating run lengths (LE)
 ```
 
-Bit-level RLE achieves ~25% compression ratio on Bad Apple (vs raw 1-bit).
-
-### Audio (`bad_apple_audio.raw`)
-
-Raw unsigned 8-bit PCM, 8000 Hz, mono.
 
 ## Partition layout
 
@@ -107,3 +100,4 @@ platformio.ini        -- PlatformIO config
 ## License
 
 MIT
+
